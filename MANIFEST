@@ -1,6 +1,7 @@
 Changes
 lib/Class/Accessor/Assert.pm
 Makefile.PL
-MANIFEST
+MANIFEST			This list of files
+META.yml
 README
 t/1.t
