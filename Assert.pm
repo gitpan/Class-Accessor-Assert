@@ -5,7 +5,7 @@ use warnings;
 use base qw(Class::Accessor Class::Data::Inheritable);
 use Carp::Assert;
 use Carp qw(croak confess);
-our $VERSION = '1.0';
+our $VERSION = '1.1';
 
 sub _mk_accessors {
     my ($self, $maker, @fields) = @_;
@@ -41,7 +41,7 @@ sub set {
     return $self->SUPER::set($key, @_) if !exists $spec->{$key}
                                        or @_ > 1; # No support for arrays
     confess "Member $key needs to be of type ".$spec->{$key}->{class}
-        if exists $spec->{$key}->{class} and
+        if defined $_[0] and exists $spec->{$key}->{class} and
             !UNIVERSAL::isa($_[0], $spec->{$key}->{class});
     $self->{$key} = $_[0];
 }
