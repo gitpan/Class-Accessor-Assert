@@ -3,9 +3,8 @@ use 5.006;
 use strict;
 use warnings;
 use base qw(Class::Accessor Class::Data::Inheritable);
-use Carp::Assert;
 use Carp qw(croak confess);
-our $VERSION = '1.1';
+our $VERSION = '1.2';
 
 sub _mk_accessors {
     my ($self, $maker, @fields) = @_;

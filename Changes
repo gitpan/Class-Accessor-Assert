@@ -1,5 +1,8 @@
 Revision history for Perl extension Class::Accessor::Assert.
 
+1.2 - Sat May  1 12:04:10 BST 2004
+    Don't need Carp::Assert.
+
 1.1 - Sun Dec 21 15:07:12 GMT 2003
     Allow setting to undef.
 
