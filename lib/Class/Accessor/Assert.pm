@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use base qw(Class::Accessor Class::Data::Inheritable);
 use Carp qw(croak confess);
-our $VERSION = '1.2';
+our $VERSION = '1.21';
 
 sub _mk_accessors {
     my ($self, $maker, @fields) = @_;
@@ -90,7 +90,17 @@ L<Class::Accessor>
 
 =head1 AUTHOR
 
-Simon Cozens, E<lt>simon@simon-cozens.orgE<gt>
+This module is maintained by
+
+  Steffen Mueller, accessor-module at steffen-mueller dot net
+
+Original author is
+
+  Simon Cozens, simon@simon-cozens.org
+
+Please direct inquiries, bug reports, etc. towards the maintainer, not the
+original author. Simon no longer provides support for this module, so please
+respect that.
 
 =head1 COPYRIGHT AND LICENSE
 

@@ -19,7 +19,12 @@ SEE ALSO
     Class::Accessor
 
 AUTHOR
-    Simon Cozens, <simon@simon-cozens.org>
+    Maintained by
+      Steffen Mueller, <accessor-module at steffen-mueller dot net>
+    Original author is
+      Simon Cozens, <simon@simon-cozens.org>
+    Please direct any inquiries, bug reports and the like towards the
+    maintainer. Simon does not support this module any more.
 
 COPYRIGHT AND LICENSE
     Copyright 2003 by Simon Cozens

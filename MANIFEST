@@ -1,5 +1,5 @@
-Assert.pm
 Changes
+lib/Class/Accessor/Assert.pm
 Makefile.PL
 MANIFEST
 README
