@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use base qw(Class::Accessor Class::Data::Inheritable);
 use Carp qw(croak confess);
-our $VERSION = '1.30';
+our $VERSION = '1.40';
 
 sub _mk_accessors {
     my ( $self, $maker, @fields ) = @_;
@@ -13,7 +13,8 @@ sub _mk_accessors {
 
     my %spec = $self->parse_fields(@fields);
     $self->accessor_specs( { %spec, %{ $self->accessor_specs || {} } } );
-    $self->SUPER::_mk_accessors( $maker, keys %spec );
+
+    $self->SUPER::_mk_accessors( 'rw', keys %spec );
 
     {
         no strict 'refs';
