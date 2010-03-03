@@ -1,5 +1,8 @@
 Revision history for Perl extension Class::Accessor::Assert.
 
+1.41 Wed Mar 03 18:00 GMT+1 2010
+  - Distribution fix (borken version in META.yml).
+
 1.40 Tue Sep 05 15:40 GMT+1 2006
   - Now works with newer Class::Accessor's (0.25 and up, I think)
   - Requires 0.25 and up.
